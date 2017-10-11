@@ -1,0 +1,6 @@
+# Temp folders #
+.tmp
+.DS_Store
+
+# IDE and editor #
+.idea
