@@ -12,4 +12,14 @@
 ### publish
     docker push hanskerkhof/ubuntu-apache-php7-mysql
     
-    
+### Installed
+
+| Package     | Version                    |
+| ------------|----------------------------|
+| Ubuntu      | 16.04.3 LTS (Xenial Xerus) |
+| Apache2     | 2 2.4.18                   |
+| Mysql       | 5.7.19                     |
+| PHP         | 7.0.22                     |
+|             |                            |
+| curl        | 7.47.0                     |
+| git         | 2.7.4                      |
