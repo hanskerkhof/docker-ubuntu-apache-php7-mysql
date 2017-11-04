@@ -30,7 +30,8 @@ Access it via `http://localhost:8090/` in a browser
 | zip         |                            |
 | curl        | 7.47.0                     |
 | git         | 2.7.4                      |
-
+| ssh         |                            |
+| rsync       |                            |
 
 ### Notes
 
