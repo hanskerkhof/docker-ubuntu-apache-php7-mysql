@@ -9,6 +9,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     mysql-server \
     apache2 \
     zip \
+    ssh \
     rsync \
     php7.0 php7.0-mysql php7.0-curl php7.0-gd php7.0-mcrypt php7.0-xml php7.0-mbstring libapache2-mod-php7.0
 
