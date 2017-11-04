@@ -7,7 +7,13 @@
     docker build --no-cache -t hanskerkhof/ubuntu-apache-php7-mysql .
 
 ### run
-    docker run -i -t hanskerkhof/ubuntu-apache-php7-mysql /bin/bash
+    docker run -i -t hanskerkhof/ubuntu-apache-php7-mysql
+
+#### run and expose to local machine
+    docker run -p 8090:80 -i -t hanskerkhof/ubuntu-apache-php7-mysql
+
+Access it via `http://localhost:8090/` in a browser
+
 
 ### publish
     docker push hanskerkhof/ubuntu-apache-php7-mysql
@@ -21,5 +27,13 @@
 | Mysql       | 5.7.19                     |
 | PHP         | 7.0.22                     |
 |             |                            |
+| zip         |                            |
 | curl        | 7.47.0                     |
 | git         | 2.7.4                      |
+
+
+### Notes
+
+https://writing.pupius.co.uk/apache-and-php-on-docker-44faef716150
+
+https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
