@@ -25,7 +25,7 @@ Access it via `http://localhost:8090/` in a browser
 | Ubuntu      | 16.04.3 LTS (Xenial Xerus) |
 | Apache2     | 2 2.4.18                   |
 | Mysql       | 5.7.19                     |
-| PHP         | 7.0.22                     |
+| PHP         | 7.1                        |
 |             |                            |
 | zip         |                            |
 | curl        | 7.47.0                     |
@@ -38,3 +38,6 @@ Access it via `http://localhost:8090/` in a browser
 https://writing.pupius.co.uk/apache-and-php-on-docker-44faef716150
 
 https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+
+#### Check for more php mods
+https://hub.docker.com/r/navidonskis/nginx-php7.1/~/dockerfile/
