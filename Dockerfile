@@ -23,7 +23,16 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     ssh \
     rsync
 
+RUN apt-get install -y build-essential
 
+# Install nodejs
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs
+
+# Install yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+RUN sudo apt-get update && sudo apt-get install -y yarn
 
 # Enable apache mods.
 RUN a2enmod headers
@@ -40,6 +49,10 @@ RUN sed -i '1iServerName localhost' /etc/apache2/apache2.conf
 
 # restart apache and mysql
 RUN service mysql start && service apache2 start
+
+# install and run beanstalkd
+RUN sudo apt-get install -y beanstalkd
+RUN sudo service beanstalkd start
 
 # add entrypont
 ADD entrypoint.sh /entrypoint.sh
